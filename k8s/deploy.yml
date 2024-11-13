@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: cafe
+ labels:
+  app: cafe
+spec:
+ replicas: 1
+ selector:
+   matchLabels:
+     app: cafe
+ template:
+   metadata:
+     labels:
+       app: cafe
+   spec: 
+      containers:
+       - name: cafe-cntr
+         image: bakhtawar375/cafe:latest
+         ports:
+         - containerPort: 80

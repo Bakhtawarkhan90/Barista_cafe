@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: cafe
+ labels:
+  app: cafe
+
+spec:
+  containers:
+   - name: cafe-contr
+     image: bakhtawar375/cafe:latest
+     ports:
+       - containerPort: 80 
+     imagePullPolicy: Always
