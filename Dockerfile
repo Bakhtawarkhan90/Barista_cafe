@@ -1,17 +1,23 @@
-# Use Ubuntu as the base image
-FROM nginx:alpine
+# Use the official Python image
+FROM python:3.9-slim
 
-# Make working dir
-
+# Set the working directory
 WORKDIR /app
 
-# Copy your website files
-COPY . /usr/share/nginx/html
+# Copy the current directory contents into the container
+COPY . /app
 
-# Expose port 80
-EXPOSE 80
+# Install the necessary packages
+RUN pip install Flask mysql-connector-python
 
-# Start NGINX
-CMD ["nginx", "-g", "daemon off;"]
+# Expose the port Flask will run on
+EXPOSE 5000
 
+# Set the environment variables for MySQL
+ENV MYSQL_HOST=database \
+    MYSQL_USER=root \
+    MYSQL_PASSWORD=kali \
+    MYSQL_DB=booking
 
+# Command to run the Flask app
+CMD ["python3", "app.py"]

@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  database:
+    image: mysql:5.7
+    container_name: database
+    environment:
+      MYSQL_ROOT_PASSWORD: kali
+      MYSQL_DATABASE: booking
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+  flask_app:
+    build: .
+    container_name: cafe
+    image: cafe:latest
+    ports:
+      - "5000:5000"
+    environment:
+      - MYSQL_HOST=database
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=kali
+      - MYSQL_DB=booking
+    depends_on:
+      - database
+
+volumes:
+  db_data:
