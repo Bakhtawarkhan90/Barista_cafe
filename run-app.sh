@@ -15,7 +15,7 @@ sudo docker compose version
 
 
 echo "**************************RUNNING PROJECT*************************** "
-cd /home/ubuntu/Barista-cafe
+cd /home/ubuntu/Barista_cafe
 docker compose down
 docker compose up --build -d
 
