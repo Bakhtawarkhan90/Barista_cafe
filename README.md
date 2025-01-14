@@ -1,5 +1,3 @@
-Sure! Here’s a `README.md` file for your project:
-
 ```markdown
 # Flask App with MySQL Docker Setup
 
