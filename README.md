@@ -118,6 +118,5 @@ ii) Backend container:
 
 ## Home Page
 ![Home Page](./Screensho%202025-01-14%20131835.png)
-//![Home Page](./Screenshot%202024-12-07%20122559.png)
 ```
 
