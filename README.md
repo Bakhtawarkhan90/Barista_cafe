@@ -117,6 +117,7 @@ ii) Backend container:
 # Welcome to Your Flask App!
 
 ## Home Page
-![Home Page](https://via.placeholder.com/800x400.png?text=Home+Page)2025-01-14 131835.png
+![Home Page](./Screensho%202025-01-14%20131835.png)
+//![Home Page](./Screenshot%202024-12-07%20122559.png)
 ```
 
