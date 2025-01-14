@@ -117,7 +117,6 @@ ii) Backend container:
 # Welcome to Your Flask App!
 
 ## Home Page
-![Home Page](https://via.placeholder.com/800x400.png?text=Home+Page)
+![Home Page](https://via.placeholder.com/800x400.png?text=Home+Page)2025-01-14 131835.png
 ```
 
-You can update the repository URL and adjust the placeholders accordingly. Let me know if you need further adjustments or any other assistance! 🚀🛠️
