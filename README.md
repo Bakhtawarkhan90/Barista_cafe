@@ -114,7 +114,7 @@ ii) Backend container:
 - Be cautious when executing SQL queries directly. Validate and sanitize user inputs to prevent vulnerabilities like SQL injection.
 - If you encounter issues, check Docker logs and error messages for troubleshooting.
 
-# Welcome to  BARISTA CAFE!
+# WELCOME TO  BARISTA CAFE!
 
 ## Home Page
 ![Home Page](./Screenshot%202025-01-14%20131835.png)
