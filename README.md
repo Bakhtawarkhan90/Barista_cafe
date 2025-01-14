@@ -39,7 +39,7 @@ Before you begin, make sure you have the following installed:
 
    - Backend: [http://localhost:5000](http://localhost:5000)
 
-## To run the APP through Shell-Script 
+## To run this APP through Shell-Script in one command
  ```bash
    git clone https://github.com/Bakhtawarkhan90/Barista_cafe.git 
    cd Barista_cafe && chmod 777 run-app.sh && ./run-app.sh
